@@ -147,7 +147,7 @@ function manualVisit(method: string) {
                                 as="button"
                                 :data="{ name: 'Inertia' }"
                                 preserve-scroll
-                                class="inline-flex items-center rounded-md border border-black/10 dark:border-white/10 bg-background px-3 py-1.5 text-sm hover:bg-accent"
+                                class="inline-flex items-center rounded-md border border-black/10 bg-background px-3 py-1.5 text-sm hover:bg-accent dark:border-white/10"
                             >
                                 POST with payload
                             </Link>
@@ -225,7 +225,9 @@ function manualVisit(method: string) {
                             </Button>
                         </div>
 
-                        <div class="mt-4 rounded-md border border-black/10 dark:border-white/10 p-3">
+                        <div
+                            class="mt-4 rounded-md border border-black/10 p-3 dark:border-white/10"
+                        >
                             <div class="mb-2 flex items-center justify-between">
                                 <h4 class="text-sm font-semibold">Event Log</h4>
                                 <Button

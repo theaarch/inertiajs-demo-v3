@@ -42,7 +42,7 @@ const breadcrumbs: BreadcrumbItem[] = [
                                     href="/contacts"
                                     prefetch
                                     cache-tags="crm"
-                                    class="inline-flex items-center gap-1.5 rounded-md border border-black/10 dark:border-white/10 bg-background px-3 py-1.5 text-sm hover:bg-accent"
+                                    class="inline-flex items-center gap-1.5 rounded-md border border-black/10 bg-background px-3 py-1.5 text-sm hover:bg-accent dark:border-white/10"
                                 >
                                     Contacts
                                     <Badge variant="outline" class="text-xs"
@@ -53,7 +53,7 @@ const breadcrumbs: BreadcrumbItem[] = [
                                     href="/organizations"
                                     prefetch
                                     :cache-tags="['crm', 'orgs']"
-                                    class="inline-flex items-center gap-1.5 rounded-md border border-black/10 dark:border-white/10 bg-background px-3 py-1.5 text-sm hover:bg-accent"
+                                    class="inline-flex items-center gap-1.5 rounded-md border border-black/10 bg-background px-3 py-1.5 text-sm hover:bg-accent dark:border-white/10"
                                 >
                                     Organizations
                                     <Badge variant="outline" class="text-xs"
@@ -64,7 +64,7 @@ const breadcrumbs: BreadcrumbItem[] = [
                                     href="/dashboard"
                                     prefetch
                                     cache-tags="dashboard"
-                                    class="inline-flex items-center gap-1.5 rounded-md border border-black/10 dark:border-white/10 bg-background px-3 py-1.5 text-sm hover:bg-accent"
+                                    class="inline-flex items-center gap-1.5 rounded-md border border-black/10 bg-background px-3 py-1.5 text-sm hover:bg-accent dark:border-white/10"
                                 >
                                     Dashboard
                                     <Badge variant="outline" class="text-xs"

@@ -50,7 +50,7 @@ const pages = [
                             :key="page.href"
                             :href="page.href"
                             view-transition
-                            class="flex items-center rounded-md border border-black/10 dark:border-white/10 bg-background px-4 py-2 text-sm transition-colors hover:bg-accent dark:border-white/10"
+                            class="flex items-center rounded-md border border-black/10 bg-background px-4 py-2 text-sm transition-colors hover:bg-accent dark:border-white/10"
                         >
                             {{ page.title }}
                         </Link>
@@ -67,7 +67,7 @@ const pages = [
                             v-for="page in pages"
                             :key="page.href"
                             :href="page.href"
-                            class="flex items-center rounded-md border border-black/10 dark:border-white/10 bg-background px-4 py-2 text-sm transition-colors hover:bg-accent dark:border-white/10"
+                            class="flex items-center rounded-md border border-black/10 bg-background px-4 py-2 text-sm transition-colors hover:bg-accent dark:border-white/10"
                         >
                             {{ page.title }}
                         </Link>

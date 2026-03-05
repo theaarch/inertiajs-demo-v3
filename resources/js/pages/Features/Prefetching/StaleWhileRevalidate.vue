@@ -37,7 +37,7 @@ const breadcrumbs: BreadcrumbItem[] = [
                             href="/contacts"
                             prefetch="mount"
                             :cacheFor="['10s', '20s']"
-                            class="inline-flex items-center rounded-md border border-black/10 dark:border-white/10 bg-background px-4 py-2 text-sm font-medium hover:bg-accent"
+                            class="inline-flex items-center rounded-md border border-black/10 bg-background px-4 py-2 text-sm font-medium hover:bg-accent dark:border-white/10"
                         >
                             Contacts (10s/20s SWR)
                         </Link>

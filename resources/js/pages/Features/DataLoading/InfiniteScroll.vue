@@ -107,7 +107,7 @@ function applyFilter() {
                     <div
                         v-for="contact in contacts.data"
                         :key="contact.id"
-                        class="flex items-center justify-between rounded border border-black/10 dark:border-white/10 px-3 py-2"
+                        class="flex items-center justify-between rounded border border-black/10 px-3 py-2 dark:border-white/10"
                     >
                         <div>
                             <p class="text-sm font-medium">
@@ -158,7 +158,7 @@ function applyFilter() {
                     <div
                         v-for="contact in contacts.data"
                         :key="contact.id"
-                        class="flex items-center justify-between rounded border border-black/10 dark:border-white/10 px-3 py-2"
+                        class="flex items-center justify-between rounded border border-black/10 px-3 py-2 dark:border-white/10"
                     >
                         <div>
                             <p class="text-sm font-medium">
@@ -218,7 +218,7 @@ function applyFilter() {
                     <div
                         v-for="contact in contacts.data"
                         :key="contact.id"
-                        class="flex items-center justify-between rounded border border-black/10 dark:border-white/10 px-3 py-2"
+                        class="flex items-center justify-between rounded border border-black/10 px-3 py-2 dark:border-white/10"
                     >
                         <div>
                             <p class="text-sm font-medium">
@@ -293,7 +293,7 @@ function applyFilter() {
                     <div
                         v-for="contact in contacts.data"
                         :key="contact.id"
-                        class="flex items-center justify-between rounded border border-black/10 dark:border-white/10 px-3 py-2"
+                        class="flex items-center justify-between rounded border border-black/10 px-3 py-2 dark:border-white/10"
                     >
                         <div>
                             <p class="text-sm font-medium">

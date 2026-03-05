@@ -97,7 +97,7 @@ onUnmounted(() => {
                             </Button>
                             <Link
                                 href="/features/events/visit-callbacks"
-                                class="inline-flex items-center rounded-md border border-black/10 dark:border-white/10 bg-background px-3 py-1.5 text-sm hover:bg-accent"
+                                class="inline-flex items-center rounded-md border border-black/10 bg-background px-3 py-1.5 text-sm hover:bg-accent dark:border-white/10"
                             >
                                 Navigate Away
                             </Link>

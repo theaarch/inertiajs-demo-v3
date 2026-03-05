@@ -81,7 +81,7 @@ function formatFileSize(bytes: number): string {
                             <div class="flex items-center gap-3">
                                 <label
                                     for="photo"
-                                    class="flex cursor-pointer items-center gap-2 rounded-md border border-dashed border-black/10 dark:border-white/10 px-4 py-3 text-sm text-muted-foreground transition-colors hover:border-primary hover:text-primary"
+                                    class="flex cursor-pointer items-center gap-2 rounded-md border border-dashed border-black/10 px-4 py-3 text-sm text-muted-foreground transition-colors hover:border-primary hover:text-primary dark:border-white/10"
                                 >
                                     <Upload class="size-4" />
                                     {{
@@ -123,7 +123,7 @@ function formatFileSize(bytes: number): string {
                             <div>
                                 <label
                                     for="files"
-                                    class="flex cursor-pointer items-center gap-2 rounded-md border border-dashed border-black/10 dark:border-white/10 px-4 py-3 text-sm text-muted-foreground transition-colors hover:border-primary hover:text-primary"
+                                    class="flex cursor-pointer items-center gap-2 rounded-md border border-dashed border-black/10 px-4 py-3 text-sm text-muted-foreground transition-colors hover:border-primary hover:text-primary dark:border-white/10"
                                 >
                                     <Upload class="size-4" />
                                     Choose files... (max 5)

@@ -167,7 +167,7 @@ const setDefaultsOnSuccess = ref(true);
 
                         <!-- Slot Methods -->
                         <div
-                            class="space-y-3 rounded-md border border-black/10 dark:border-white/10 p-4"
+                            class="space-y-3 rounded-md border border-black/10 p-4 dark:border-white/10"
                         >
                             <h3 class="text-sm font-semibold">Slot Methods</h3>
                             <div class="flex flex-wrap gap-2">

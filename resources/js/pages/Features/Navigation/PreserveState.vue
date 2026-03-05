@@ -152,7 +152,7 @@ const textInput = ref('');
                         <div class="space-y-1">
                             <Link
                                 href="/features/navigation/preserve-state"
-                                class="inline-flex items-center rounded-md border border-black/10 dark:border-white/10 bg-background px-3 py-1.5 text-sm hover:bg-accent"
+                                class="inline-flex items-center rounded-md border border-black/10 bg-background px-3 py-1.5 text-sm hover:bg-accent dark:border-white/10"
                             >
                                 &lt;Link&gt; (no preserveState)
                             </Link>
@@ -164,7 +164,7 @@ const textInput = ref('');
                             <Link
                                 href="/features/navigation/preserve-state"
                                 preserve-state
-                                class="inline-flex items-center rounded-md border border-black/10 dark:border-white/10 bg-background px-3 py-1.5 text-sm hover:bg-accent"
+                                class="inline-flex items-center rounded-md border border-black/10 bg-background px-3 py-1.5 text-sm hover:bg-accent dark:border-white/10"
                             >
                                 &lt;Link preserve-state&gt;
                             </Link>

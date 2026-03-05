@@ -106,7 +106,7 @@ const items = Array.from({ length: 30 }, (_, i) => ({
                         <div
                             v-for="item in items"
                             :key="item.id"
-                            class="rounded-md border border-black/10 dark:border-white/10 p-3"
+                            class="rounded-md border border-black/10 p-3 dark:border-white/10"
                         >
                             <div class="flex items-center justify-between">
                                 <span class="text-sm font-medium">{{

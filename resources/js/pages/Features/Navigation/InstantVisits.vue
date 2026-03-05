@@ -92,20 +92,26 @@ function visitWithCallbackProps() {
                 <!-- How it works -->
                 <FeatureCard info-card title="How It Works">
                     <div class="space-y-3 text-xs">
-                        <div class="rounded-md border border-black/10 dark:border-white/10 p-2">
+                        <div
+                            class="rounded-md border border-black/10 p-2 dark:border-white/10"
+                        >
                             <p class="font-semibold">1. Instant swap</p>
                             <p class="text-muted-foreground">
                                 The target component renders immediately with
                                 placeholder or shared props.
                             </p>
                         </div>
-                        <div class="rounded-md border border-black/10 dark:border-white/10 p-2">
+                        <div
+                            class="rounded-md border border-black/10 p-2 dark:border-white/10"
+                        >
                             <p class="font-semibold">2. Server request</p>
                             <p class="text-muted-foreground">
                                 The actual HTTP request fires in the background.
                             </p>
                         </div>
-                        <div class="rounded-md border border-black/10 dark:border-white/10 p-2">
+                        <div
+                            class="rounded-md border border-black/10 p-2 dark:border-white/10"
+                        >
                             <p class="font-semibold">3. Props update</p>
                             <p class="text-muted-foreground">
                                 When the server responds, real props silently

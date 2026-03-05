@@ -48,7 +48,7 @@ const currentPath = computed(() => page.url);
             </FeatureHeader>
 
             <div
-                class="flex flex-col gap-4 rounded-xl border border-black/10 bg-card p-4 shadow-sm dark:border-white/10 sm:flex-row sm:items-center sm:justify-between"
+                class="flex flex-col gap-4 rounded-xl border border-black/10 bg-card p-4 shadow-sm sm:flex-row sm:items-center sm:justify-between dark:border-white/10"
             >
                 <div class="flex items-center gap-6">
                     <div class="flex items-center gap-2">

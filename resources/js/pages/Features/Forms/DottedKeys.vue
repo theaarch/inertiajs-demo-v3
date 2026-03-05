@@ -70,7 +70,7 @@ const parsedData = computed(
                     >
                         <!-- User fields (nested) -->
                         <fieldset
-                            class="space-y-3 rounded-lg border border-black/10 dark:border-white/10 p-4"
+                            class="space-y-3 rounded-lg border border-black/10 p-4 dark:border-white/10"
                         >
                             <legend class="px-2 text-sm font-semibold">
                                 User (<code class="text-xs">user.*</code>)
@@ -98,7 +98,7 @@ const parsedData = computed(
 
                         <!-- Address fields (nested) -->
                         <fieldset
-                            class="space-y-3 rounded-lg border border-black/10 dark:border-white/10 p-4"
+                            class="space-y-3 rounded-lg border border-black/10 p-4 dark:border-white/10"
                         >
                             <legend class="px-2 text-sm font-semibold">
                                 Address (<code class="text-xs">address.*</code>)
@@ -127,7 +127,7 @@ const parsedData = computed(
 
                         <!-- Array fields -->
                         <fieldset
-                            class="space-y-3 rounded-lg border border-black/10 dark:border-white/10 p-4"
+                            class="space-y-3 rounded-lg border border-black/10 p-4 dark:border-white/10"
                         >
                             <legend class="px-2 text-sm font-semibold">
                                 Tags (<code class="text-xs">tags[]</code>)

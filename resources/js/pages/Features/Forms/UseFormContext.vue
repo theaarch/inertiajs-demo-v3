@@ -91,7 +91,7 @@ const breadcrumbs: BreadcrumbItem[] = [
 
                         <!-- Parent State Display -->
                         <div
-                            class="mt-4 space-y-3 rounded-md border border-black/10 dark:border-white/10 p-4"
+                            class="mt-4 space-y-3 rounded-md border border-black/10 p-4 dark:border-white/10"
                         >
                             <h3 class="text-sm font-semibold">
                                 Parent Slot Props

@@ -131,7 +131,7 @@ const breadcrumbs: BreadcrumbItem[] = [
                         </p>
                         <div
                             scroll-region
-                            class="h-48 space-y-2 overflow-y-auto rounded-lg border border-black/10 dark:border-white/10 p-3 dark:border-white/10"
+                            class="h-48 space-y-2 overflow-y-auto rounded-lg border border-black/10 p-3 dark:border-white/10"
                         >
                             <div
                                 v-for="item in items"

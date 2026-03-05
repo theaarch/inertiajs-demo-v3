@@ -176,7 +176,9 @@ function cancelRequest() {
                     description="When to use which."
                 >
                     <div class="space-y-3 text-xs">
-                        <div class="rounded-md border border-black/10 dark:border-white/10 p-2">
+                        <div
+                            class="rounded-md border border-black/10 p-2 dark:border-white/10"
+                        >
                             <p class="font-semibold">useForm()</p>
                             <p class="text-muted-foreground">
                                 Triggers Inertia page visits. Server returns

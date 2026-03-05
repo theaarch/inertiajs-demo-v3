@@ -127,7 +127,7 @@ return redirect('/page#section');
                             </Button>
                             <Link
                                 href="/features/navigation/url-fragments/preserve-redirect#link-fragment"
-                                class="inline-flex h-9 items-center justify-center rounded-md border border-black/10 dark:border-white/10 bg-background px-4 text-sm font-medium hover:bg-accent hover:text-accent-foreground"
+                                class="inline-flex h-9 items-center justify-center rounded-md border border-black/10 bg-background px-4 text-sm font-medium hover:bg-accent hover:text-accent-foreground dark:border-white/10"
                             >
                                 Link with #link-fragment
                             </Link>
@@ -174,7 +174,9 @@ return redirect('/target')
                 <!-- How it works -->
                 <FeatureCard info-card title="Key Differences">
                     <div class="space-y-3 text-xs">
-                        <div class="rounded-md border border-black/10 dark:border-white/10 p-2">
+                        <div
+                            class="rounded-md border border-black/10 p-2 dark:border-white/10"
+                        >
                             <p class="font-semibold">Hash Fragment Redirect</p>
                             <p class="text-muted-foreground">
                                 The <em>server</em> decides the hash fragment.

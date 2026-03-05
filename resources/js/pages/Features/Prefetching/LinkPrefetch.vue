@@ -36,7 +36,7 @@ const breadcrumbs: BreadcrumbItem[] = [
                         <Link
                             href="/contacts"
                             prefetch
-                            class="inline-flex items-center rounded-md border border-black/10 dark:border-white/10 bg-background px-4 py-2 text-sm font-medium hover:bg-accent dark:border-white/10"
+                            class="inline-flex items-center rounded-md border border-black/10 bg-background px-4 py-2 text-sm font-medium hover:bg-accent dark:border-white/10"
                         >
                             Contacts
                         </Link>
@@ -57,7 +57,7 @@ const breadcrumbs: BreadcrumbItem[] = [
                         <Link
                             href="/organizations"
                             prefetch="click"
-                            class="inline-flex items-center rounded-md border border-black/10 dark:border-white/10 bg-background px-4 py-2 text-sm font-medium hover:bg-accent dark:border-white/10"
+                            class="inline-flex items-center rounded-md border border-black/10 bg-background px-4 py-2 text-sm font-medium hover:bg-accent dark:border-white/10"
                         >
                             Organizations
                         </Link>
@@ -78,7 +78,7 @@ const breadcrumbs: BreadcrumbItem[] = [
                         <Link
                             href="/contacts/create"
                             prefetch="mount"
-                            class="inline-flex items-center rounded-md border border-black/10 dark:border-white/10 bg-background px-4 py-2 text-sm font-medium hover:bg-accent dark:border-white/10"
+                            class="inline-flex items-center rounded-md border border-black/10 bg-background px-4 py-2 text-sm font-medium hover:bg-accent dark:border-white/10"
                         >
                             Create Contact
                         </Link>
@@ -100,7 +100,7 @@ const breadcrumbs: BreadcrumbItem[] = [
                             href="/dashboard"
                             prefetch
                             cacheFor="10s"
-                            class="inline-flex items-center rounded-md border border-black/10 dark:border-white/10 bg-background px-4 py-2 text-sm font-medium hover:bg-accent dark:border-white/10"
+                            class="inline-flex items-center rounded-md border border-black/10 bg-background px-4 py-2 text-sm font-medium hover:bg-accent dark:border-white/10"
                         >
                             Dashboard (10s cache)
                         </Link>
