@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2349fc530783698f51aacb20b6049dac",
+    "content-hash": "7b66d06862f18391149b1b8f95541c9f",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -1159,7 +1159,7 @@
         },
         {
             "name": "inertiajs/inertia-laravel",
-            "version": "3.x-dev",
+            "version": "v3.0.0-beta1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/inertiajs/inertia-laravel.git",
@@ -1223,7 +1223,7 @@
             ],
             "support": {
                 "issues": "https://github.com/inertiajs/inertia-laravel/issues",
-                "source": "https://github.com/inertiajs/inertia-laravel/tree/3.x"
+                "source": "https://github.com/inertiajs/inertia-laravel/tree/v3.0.0-beta1"
             },
             "time": "2026-02-25T20:43:55+00:00"
         },
@@ -11801,7 +11801,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "inertiajs/inertia-laravel": 20,
         "laravel/wayfinder": 20
     },
     "prefer-stable": true,
