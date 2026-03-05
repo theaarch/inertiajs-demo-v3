@@ -85,7 +85,7 @@ const precogForm = useForm({
                     <div class="grid gap-6 lg:grid-cols-3">
                         <FeatureCard title="useForm">
                             <div
-                                class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs dark:bg-neutral-900/50"
+                                class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
                             >
                                 <pre>
 form.submit('post', '/forms/use-form')</pre
@@ -135,7 +135,7 @@ form.submit('post', '/forms/use-form')</pre
 
                         <FeatureCard title="<Form>">
                             <div
-                                class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs dark:bg-neutral-900/50"
+                                class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
                             >
                                 <pre>
 &lt;Form action="/forms/form-component"
@@ -182,7 +182,7 @@ form.submit('post', '/forms/use-form')</pre
 
                         <FeatureCard title="router / <Link>">
                             <div
-                                class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs dark:bg-neutral-900/50"
+                                class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
                             >
                                 <pre>
 router.visit('/forms/wayfinder')
@@ -226,7 +226,7 @@ router.post('/toggle/1', data)
                             with your PHP controllers.
                         </p>
                         <div
-                            class="mt-2 rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs dark:bg-neutral-900/50"
+                            class="mt-2 rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
                         >
                             <pre>
 import { submitUseForm, toggleFavorite } from '@/wayfinder/.../FormController'
@@ -245,7 +245,7 @@ toggleFavorite.url(1)  // "{{ toggleFavorite.url(1) }}"</pre
                             description="Pass the action directly to submit(). Method and URL are extracted automatically."
                         >
                             <div
-                                class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs dark:bg-neutral-900/50"
+                                class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
                             >
                                 <pre>form.submit(submitUseForm())</pre>
                             </div>
@@ -291,7 +291,7 @@ toggleFavorite.url(1)  // "{{ toggleFavorite.url(1) }}"</pre
                             description="The :action prop accepts the { url, method } object directly."
                         >
                             <div
-                                class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs dark:bg-neutral-900/50"
+                                class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
                             >
                                 <pre>
 &lt;Form :action="submitFormComponent()"&gt;</pre
@@ -339,7 +339,7 @@ toggleFavorite.url(1)  // "{{ toggleFavorite.url(1) }}"</pre
                             description="router and Link both accept { url, method } objects."
                         >
                             <div
-                                class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs dark:bg-neutral-900/50"
+                                class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
                             >
                                 <pre>
 // Extracts method + URL from action
@@ -410,7 +410,7 @@ router.post(toggleFavorite.url(contact))
                             names exactly.
                         </p>
                         <div
-                            class="mt-2 rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs dark:bg-neutral-900/50"
+                            class="mt-2 rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
                         >
                             <pre>
 import contacts from '@/wayfinder/routes/contacts'
@@ -428,7 +428,7 @@ contacts.show.url(1) // "{{ contacts.show.url(1) }}"</pre
                             description="Named route actions work exactly the same as controller actions."
                         >
                             <div
-                                class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs dark:bg-neutral-900/50"
+                                class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
                             >
                                 <pre>form.submit(contacts.store())</pre>
                             </div>
@@ -474,7 +474,7 @@ contacts.show.url(1) // "{{ contacts.show.url(1) }}"</pre
                             description="Pass the named route action directly to :action."
                         >
                             <div
-                                class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs dark:bg-neutral-900/50"
+                                class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
                             >
                                 <pre>
 &lt;Form :action="contacts.store()"&gt;</pre
@@ -522,7 +522,7 @@ contacts.show.url(1) // "{{ contacts.show.url(1) }}"</pre
                             description="Use named routes for navigation and programmatic visits."
                         >
                             <div
-                                class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs dark:bg-neutral-900/50"
+                                class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
                             >
                                 <pre>
 router.visit(contacts.index())
@@ -590,7 +590,7 @@ router.prefetch(contacts.show(id))
                             component.
                         </p>
                         <div
-                            class="mt-2 rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs dark:bg-neutral-900/50"
+                            class="mt-2 rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
                         >
                             <pre>
 import { submitFormComponent, toggleFavorite } from '@/wayfinder/.../FormController'
@@ -604,7 +604,7 @@ toggleFavorite.form(1)      // {{ JSON.stringify(toggleFavorite.form(1)) }}</pre
                     <div class="grid gap-6 lg:grid-cols-2">
                         <FeatureCard title="v-bind with .form()">
                             <div
-                                class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs dark:bg-neutral-900/50"
+                                class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
                             >
                                 <pre>
 &lt;Form v-bind="submitFormComponent.form()"&gt;</pre
@@ -649,7 +649,7 @@ toggleFavorite.form(1)      // {{ JSON.stringify(toggleFavorite.form(1)) }}</pre
 
                         <FeatureCard title="With route parameters">
                             <div
-                                class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs dark:bg-neutral-900/50"
+                                class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
                             >
                                 <pre>
 // Positional
@@ -688,7 +688,7 @@ toggleFavorite.form({ id: 1 })
                             description="Sets query parameters on the generated URL."
                         >
                             <div
-                                class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs dark:bg-neutral-900/50"
+                                class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
                             >
                                 <pre>
 contacts.index({ query: { search: 'Jane', page: 2 } })
@@ -730,7 +730,7 @@ toggleFavorite(1, { query: { notify: true } })
                             description="Merges with current URL params. Pass null to remove a param."
                         >
                             <div
-                                class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs dark:bg-neutral-900/50"
+                                class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
                             >
                                 <pre>
 // Adds page=2 to current URL params
@@ -808,7 +808,7 @@ contacts.index({ mergeQuery: { sort: null } })
                                 and pass a Wayfinder route directly.
                             </template>
                             <div
-                                class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs dark:bg-neutral-900/50"
+                                class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
                             >
                                 <pre>
 const form = useForm({
@@ -969,7 +969,7 @@ form.invalid('username')</pre
                                 to enable it.
                             </template>
                             <div
-                                class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs dark:bg-neutral-900/50"
+                                class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
                             >
                                 <pre>
 &lt;Form v-bind="storeAccount.form()"

@@ -136,7 +136,7 @@ const textInput = ref('');
                         <div class="space-y-1">
                             <Button
                                 variant="secondary"
-                                @click="router.reload({ preserveState: true })"
+                                @click="router.reload()"
                             >
                                 router.reload()
                             </Button>

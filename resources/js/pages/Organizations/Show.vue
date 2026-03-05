@@ -9,9 +9,15 @@ import AppLayout from '@/layouts/AppLayout.vue';
 import { type BreadcrumbItem } from '@/types';
 import contactRoutes from '@/wayfinder/routes/contacts';
 import organizationRoutes from '@/wayfinder/routes/organizations';
-import type { Inertia } from '@/wayfinder/types';
+import type { App, Inertia } from '@/wayfinder/types';
 
-const props = defineProps<Inertia.Pages.Organizations.Show>();
+type CursorPaginated<T> = { data: T[]; next_cursor: string | null; next_page_url: string | null; prev_cursor: string | null; prev_page_url: string | null };
+
+const props = defineProps<
+    Omit<Inertia.Pages.Organizations.Show, 'contacts'> & {
+        contacts: CursorPaginated<App.Models.Contact>;
+    }
+>();
 
 const breadcrumbs: BreadcrumbItem[] = [
     { title: 'CRM' },

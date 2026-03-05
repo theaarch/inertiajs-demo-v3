@@ -7,7 +7,8 @@ import FeatureHeader from '@/components/FeatureHeader.vue';
 import { Button } from '@/components/ui/button';
 import AppLayout from '@/layouts/AppLayout.vue';
 import { type BreadcrumbItem } from '@/types';
-import type { Inertia } from '@/wayfinder/types';
+import type { App, Inertia } from '@/wayfinder/types';
+
 
 const props = defineProps<Inertia.Pages.Features.Forms.OptimisticUpdates>();
 
@@ -40,7 +41,7 @@ function toggleFavoriteRouter(contact: {
         .optimistic((currentProps: Record<string, unknown>) => {
             const contacts = (
                 currentProps.contacts as typeof props.contacts
-            ).map((c) =>
+            ).map((c: App.Models.Contact) =>
                 c.id === contact.id ? { ...c, is_favorite: !c.is_favorite } : c,
             );
             return { contacts };
@@ -52,7 +53,6 @@ function toggleFavoriteRouter(contact: {
             },
             {
                 preserveScroll: true,
-                async: true,
                 onSuccess: () => log(`[router.optimistic] Server confirmed`),
                 onError: () =>
                     log(`[router.optimistic] Error! Auto-rolled back`),
@@ -76,14 +76,13 @@ function toggleFavoriteUseForm(contact: {
         .optimistic((currentProps: Record<string, unknown>) => {
             const contacts = (
                 currentProps.contacts as typeof props.contacts
-            ).map((c) =>
+            ).map((c: App.Models.Contact) =>
                 c.id === contact.id ? { ...c, is_favorite: !c.is_favorite } : c,
             );
             return { contacts };
         })
         .post(`/features/forms/optimistic-toggle/${contact.id}`, {
             preserveScroll: true,
-            async: true,
             onSuccess: () => log(`[useForm.optimistic] Server confirmed`),
             onError: () => log(`[useForm.optimistic] Error! Auto-rolled back`),
         });
@@ -245,7 +244,7 @@ function toggleFavoriteUseForm(contact: {
                                     ) => ({
                                         contacts: (
                                             currentProps.contacts as typeof props.contacts
-                                        ).map((c) =>
+                                        ).map((c: App.Models.Contact) =>
                                             c.id === contact.id
                                                 ? {
                                                       ...c,
@@ -257,7 +256,6 @@ function toggleFavoriteUseForm(contact: {
                                     })
                                 "
                                 preserve-scroll
-                                async
                                 class="contents"
                             >
                                 <input

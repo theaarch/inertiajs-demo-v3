@@ -35,7 +35,7 @@ const breadcrumbs: BreadcrumbItem[] = [
                 >
                     <div class="space-y-3">
                         <div
-                            class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs"
+                            class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
                         >
                             <pre>
 import AppLayout from './AppLayout.vue'
@@ -104,7 +104,7 @@ defineOptions({
                 >
                     <div class="grid gap-4 sm:grid-cols-2">
                         <div
-                            class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs"
+                            class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
                         >
                             <p class="font-semibold">Standard pages:</p>
                             <pre class="mt-1">
@@ -118,7 +118,7 @@ defineOptions({
                             </p>
                         </div>
                         <div
-                            class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs"
+                            class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
                         >
                             <p class="font-semibold">Persistent nested:</p>
                             <pre class="mt-1">

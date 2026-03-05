@@ -14,7 +14,7 @@ import { Skeleton } from '@/components/ui/skeleton';
 import AppLayout from '@/layouts/AppLayout.vue';
 import { type BreadcrumbItem } from '@/types';
 import contacts from '@/wayfinder/routes/contacts';
-import type { Inertia } from '@/wayfinder/types';
+import type { App, Inertia } from '@/wayfinder/types';
 
 const props = defineProps<
     Omit<Inertia.Pages.Contacts.Show, 'notes'> & {
@@ -210,7 +210,7 @@ function deleteContact() {
                                         >
                                             {{
                                                 new Date(
-                                                    note.created_at,
+                                                    note.created_at!,
                                                 ).toLocaleDateString()
                                             }}
                                         </time>

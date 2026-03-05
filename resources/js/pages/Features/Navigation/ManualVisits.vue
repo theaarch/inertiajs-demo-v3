@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 import AppLayout from '@/layouts/AppLayout.vue';
 import { type BreadcrumbItem } from '@/types';
 
-const props = defineProps<{
+defineProps<{
     timestamp: string;
     counter: number;
 }>();

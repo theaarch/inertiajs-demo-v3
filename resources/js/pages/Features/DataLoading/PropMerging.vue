@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import { Head, router } from '@inertiajs/vue3';
+import { computed } from 'vue';
 import FeatureCard from '@/components/FeatureCard.vue';
 import FeatureHeader from '@/components/FeatureHeader.vue';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import AppLayout from '@/layouts/AppLayout.vue';
 import { type BreadcrumbItem } from '@/types';
-import { computed } from 'vue';
 
 const props = defineProps<{
     notifications: Array<{ id: number; message: string; type: string }>;
@@ -232,7 +232,7 @@ const latestContactTimestamp = computed(() => {
                         </p>
 
                         <div
-                            class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs"
+                            class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
                         >
                             <p>
                                 Each fetch returns all known contacts with fresh

@@ -42,7 +42,7 @@ const breadcrumbs: BreadcrumbItem[] = [
                         </Button>
 
                         <div
-                            class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs"
+                            class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
                         >
                             <p>
                                 Open DevTools Network tab, click the button,

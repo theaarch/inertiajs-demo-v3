@@ -100,7 +100,7 @@ function preserveFragmentVisit() {
                             >. Check the URL bar after clicking.
                         </p>
                         <div
-                            class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs"
+                            class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
                         >
                             <p class="font-semibold">Server</p>
                             <pre class="mt-1">
@@ -137,7 +137,7 @@ return redirect('/page#section');
                             original hash fragment survives.
                         </p>
                         <div
-                            class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs"
+                            class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
                         >
                             <p class="font-semibold">Server</p>
                             <pre class="mt-1">
@@ -204,7 +204,7 @@ return redirect('/target')
                 >
                     <div class="grid gap-3 sm:grid-cols-3">
                         <div
-                            class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs"
+                            class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
                         >
                             <p class="font-semibold">Hash Redirect (server)</p>
                             <pre class="mt-1">
@@ -217,7 +217,7 @@ return redirect('/page#hash');
                             >
                         </div>
                         <div
-                            class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs"
+                            class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
                         >
                             <p class="font-semibold">
                                 preserveFragment (server)
@@ -232,7 +232,7 @@ return redirect('/target')
                             >
                         </div>
                         <div
-                            class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs"
+                            class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
                         >
                             <p class="font-semibold">Client usage</p>
                             <pre class="mt-1">

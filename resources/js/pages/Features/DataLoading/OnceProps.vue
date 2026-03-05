@@ -107,7 +107,7 @@ const otherPage = () => (props.page === 1 ? 2 : 1);
                         </div>
 
                         <div
-                            class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs"
+                            class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
                         >
                             <ul class="list-inside list-disc space-y-1">
                                 <li>

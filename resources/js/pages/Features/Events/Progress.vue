@@ -69,7 +69,7 @@ const breadcrumbs: BreadcrumbItem[] = [
                         Set in <code class="text-xs">createInertiaApp</code>.
                     </template>
                     <pre
-                        class="overflow-auto rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs"
+                        class="overflow-auto rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
                     >
 createInertiaApp({
   progress: {
@@ -89,7 +89,7 @@ createInertiaApp({
                 >
                     <div class="space-y-3">
                         <div
-                            class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs"
+                            class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
                         >
                             <p class="font-semibold">Disable per visit:</p>
                             <pre class="mt-1">
@@ -99,7 +99,7 @@ router.get('/url', {}, {
                             >
                         </div>
                         <div
-                            class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs"
+                            class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
                         >
                             <p class="font-semibold">Async visits:</p>
                             <pre class="mt-1">

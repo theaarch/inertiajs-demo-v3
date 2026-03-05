@@ -8,9 +8,16 @@ import { Input } from '@/components/ui/input';
 import AppLayout from '@/layouts/AppLayout.vue';
 import { type BreadcrumbItem } from '@/types';
 import contactRoutes from '@/wayfinder/routes/contacts';
-import type { Inertia } from '@/wayfinder/types';
+import type { App, Inertia } from '@/wayfinder/types';
 
-const props = defineProps<Inertia.Pages.Contacts.Index>();
+type CursorPaginated<T> = { data: T[]; next_cursor: string | null; next_page_url: string | null; prev_cursor: string | null; prev_page_url: string | null };
+
+const props = defineProps<
+    Omit<Inertia.Pages.Contacts.Index, 'contacts' | 'filters'> & {
+        contacts: CursorPaginated<App.Models.Contact & { organization?: { id: number; name: string } | null }>;
+        filters: { search: string; favorite: boolean };
+    }
+>();
 
 const breadcrumbs: BreadcrumbItem[] = [
     { title: 'CRM' },
@@ -28,7 +35,7 @@ watch(search, (value) => {
         router.visit(contactRoutes.index().url, {
             data: {
                 search: value || undefined,
-                favorite: favoriteFilter.value || undefined,
+                favorite: favoriteFilter.value ? true : undefined,
             },
             only: ['contacts', 'filters'],
             reset: ['contacts'],
@@ -43,7 +50,7 @@ function toggleFavoriteFilter() {
     router.visit(contactRoutes.index().url, {
         data: {
             search: search.value || undefined,
-            favorite: favoriteFilter.value || undefined,
+            favorite: favoriteFilter.value ? true : undefined,
         },
         only: ['contacts', 'filters'],
         reset: ['contacts'],

@@ -130,7 +130,7 @@ function visitWithCallbackProps() {
                             Visit Target (2s delay)
                         </Button>
                         <div
-                            class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs"
+                            class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
                         >
                             <pre>
 router.visit(url, {
@@ -155,7 +155,7 @@ router.visit(url, {
                             Visit with Placeholders
                         </Button>
                         <div
-                            class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs"
+                            class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
                         >
                             <pre>
 router.visit(url, {
@@ -183,7 +183,7 @@ router.visit(url, {
                             Visit with Callback
                         </Button>
                         <div
-                            class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs"
+                            class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
                         >
                             <pre>
 router.visit(url, {
@@ -214,7 +214,7 @@ router.visit(url, {
                             Link with component
                         </Link>
                         <div
-                            class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs"
+                            class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
                         >
                             <pre>
 &lt;Link
@@ -236,7 +236,7 @@ router.visit(url, {
                 >
                     <div class="grid gap-3 sm:grid-cols-3">
                         <div
-                            class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs"
+                            class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
                         >
                             <p class="font-semibold">router.visit()</p>
                             <pre class="mt-1">
@@ -247,7 +247,7 @@ router.visit(url, {
                             >
                         </div>
                         <div
-                            class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs"
+                            class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
                         >
                             <p class="font-semibold">&lt;Link&gt;</p>
                             <pre class="mt-1">
@@ -259,7 +259,7 @@ router.visit(url, {
                             >
                         </div>
                         <div
-                            class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs"
+                            class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
                         >
                             <p class="font-semibold">pageProps callback</p>
                             <pre class="mt-1">

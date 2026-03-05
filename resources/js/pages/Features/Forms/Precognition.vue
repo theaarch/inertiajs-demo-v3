@@ -372,7 +372,6 @@ form.setValidationTimeout(500);
                             validate,
                             valid,
                             invalid,
-                            hasErrors,
                         }"
                     >
                         <div class="space-y-2">
@@ -499,7 +498,7 @@ form.setValidationTimeout(500);
                     <FeatureCard info-card title="Form Component vs useForm">
                         <div class="space-y-3 text-sm text-muted-foreground">
                             <div
-                                class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs"
+                                class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
                             >
                                 <p class="font-semibold">Form Component</p>
                                 <pre class="mt-1">
@@ -512,7 +511,7 @@ form.setValidationTimeout(500);
                                 >
                             </div>
                             <div
-                                class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs"
+                                class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
                             >
                                 <p class="font-semibold">useForm</p>
                                 <pre class="mt-1">

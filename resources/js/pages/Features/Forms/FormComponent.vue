@@ -17,7 +17,7 @@ const breadcrumbs: BreadcrumbItem[] = [
     { title: 'Form Component' },
 ];
 
-const formRef = ref<InstanceType<typeof Form> | null>(null);
+const formRef = ref<any>(null);
 
 const resetOnSuccess = ref(false);
 const setDefaultsOnSuccess = ref(true);
@@ -77,9 +77,7 @@ const setDefaultsOnSuccess = ref(true);
                             errors,
                             processing,
                             isDirty,
-                            wasSuccessful,
                             recentlySuccessful,
-                            hasErrors,
                             progress,
                             submit,
                             reset,

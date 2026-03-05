@@ -3,9 +3,9 @@ import { Head, router } from '@inertiajs/vue3';
 import { ref, onUnmounted } from 'vue';
 import FeatureCard from '@/components/FeatureCard.vue';
 import FeatureHeader from '@/components/FeatureHeader.vue';
-import { addToast } from '@/composables/useFlashToast';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
+import { addToast } from '@/composables/useFlashToast';
 import AppLayout from '@/layouts/AppLayout.vue';
 import { type BreadcrumbItem } from '@/types';
 
@@ -67,7 +67,7 @@ onUnmounted(() => {
                 >
                     <div class="space-y-3">
                         <div
-                            class="space-y-2 rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs"
+                            class="space-y-2 rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
                         >
                             <p>Common causes of network errors:</p>
                             <ul class="list-inside list-disc space-y-1">
@@ -117,7 +117,7 @@ onUnmounted(() => {
                         </p>
 
                         <div
-                            class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs"
+                            class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
                         >
                             <p>
                                 <strong>To test:</strong> Open DevTools →
@@ -159,7 +159,7 @@ onUnmounted(() => {
                 >
                     <div class="grid gap-3 sm:grid-cols-2">
                         <div
-                            class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs"
+                            class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
                         >
                             <p class="font-semibold">Per-visit callback:</p>
                             <pre class="mt-1">
@@ -172,7 +172,7 @@ router.get('/url', {}, {
                             >
                         </div>
                         <div
-                            class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs"
+                            class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
                         >
                             <p class="font-semibold">Global event:</p>
                             <pre class="mt-1">

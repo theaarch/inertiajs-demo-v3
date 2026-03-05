@@ -177,7 +177,7 @@ onUnmounted(() => {
                 >
                     <div class="grid gap-3 sm:grid-cols-2">
                         <div
-                            class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs dark:border-white/5 dark:bg-neutral-900/80"
+                            class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
                         >
                             <p class="font-semibold">Server-side (handled):</p>
                             <pre class="mt-1 overflow-x-auto">
@@ -191,7 +191,7 @@ Inertia::handleExceptionsUsing(
                             >
                         </div>
                         <div
-                            class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs dark:border-white/5 dark:bg-neutral-900/80"
+                            class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
                         >
                             <p class="font-semibold">
                                 Client-side (intercepted):
