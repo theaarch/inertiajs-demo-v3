@@ -49,10 +49,16 @@ php artisan key:generate
 touch database/database.sqlite
 php artisan migrate --seed
 
+# Generate Wayfinder routes
+php artisan wayfinder:generate
+
 # Development
 composer run dev
 # Or manually:
 # php artisan serve & npm run dev
+
+# For production builds, generate Wayfinder routes first:
+# php artisan wayfinder:generate && npm run build
 ```
 
 The app is also available via [Laravel Herd](https://herd.laravel.com) at `https://inertia-kitchen-sink.test`.
