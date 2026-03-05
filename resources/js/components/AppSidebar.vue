@@ -14,7 +14,6 @@ import {
     AlertTriangle,
     Wifi,
     Save,
-
 } from 'lucide-vue-next';
 import NavFooter from '@/components/NavFooter.vue';
 import NavSection from '@/components/NavSection.vue';
@@ -167,7 +166,6 @@ const featuresSection: NavSectionType = {
                 {
                     title: 'Once Props',
                     href: '/features/data-loading/once-props',
-                    badge: 'v3',
                 },
                 {
                     title: 'Optional Props',
@@ -261,7 +259,11 @@ const featuresSection: NavSectionType = {
             title: 'HTTP',
             icon: Wifi,
             items: [
-                { title: 'useHttp', href: '/features/http/use-http', badge: 'v3' },
+                {
+                    title: 'useHttp',
+                    href: '/features/http/use-http',
+                    badge: 'v3',
+                },
             ],
         },
     ],

@@ -16,7 +16,11 @@ import { type BreadcrumbItem } from '@/types';
 import contacts from '@/wayfinder/routes/contacts';
 import type { Inertia } from '@/wayfinder/types';
 
-const props = defineProps<Inertia.Pages.Contacts.Show>();
+const props = defineProps<
+    Omit<Inertia.Pages.Contacts.Show, 'notes'> & {
+        notes?: App.Models.Note[];
+    }
+>();
 
 const breadcrumbs: BreadcrumbItem[] = [
     { title: 'CRM' },

@@ -15,7 +15,13 @@ import { dashboard } from '@/wayfinder/routes';
 import contacts from '@/wayfinder/routes/contacts';
 import type { Inertia } from '@/wayfinder/types';
 
-defineProps<Inertia.Pages.Crm.Dashboard>();
+defineProps<
+    Omit<Inertia.Pages.Crm.Dashboard, 'totalContacts' | 'totalOrganizations' | 'recentNotesCount'> & {
+        totalContacts?: number;
+        totalOrganizations?: number;
+        recentNotesCount?: number;
+    }
+>();
 
 const breadcrumbs: BreadcrumbItem[] = [
     { title: 'Dashboard', href: dashboard().url },
