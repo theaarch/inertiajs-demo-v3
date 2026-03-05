@@ -10,9 +10,6 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
-      - name: Checkout Inertia v3
-        run: git clone --branch 3.x --depth 1 https://github.com/inertiajs/inertia.git ../inertia
-
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
@@ -24,17 +21,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '22'
-
-      - name: Install pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: latest
-
-      - name: Build Inertia v3 Packages
-        working-directory: ../inertia
-        run: |
-          pnpm install --frozen-lockfile
-          pnpm build:all
 
       - name: Install Dependencies
         run: |
