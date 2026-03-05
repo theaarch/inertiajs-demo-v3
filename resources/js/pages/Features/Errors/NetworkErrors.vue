@@ -33,7 +33,10 @@ function toggleIntercept() {
         removeListener = router.on('networkError', (event) => {
             event.preventDefault();
             log(`Intercepted network error, default behavior prevented`);
-            addToast('Network error intercepted. Default behavior was prevented.', 'warning');
+            addToast(
+                'Network error intercepted. Default behavior was prevented.',
+                'warning',
+            );
         });
         interceptEnabled.value = true;
         log('Global networkError listener registered');
@@ -67,7 +70,7 @@ onUnmounted(() => {
                 >
                     <div class="space-y-3">
                         <div
-                            class="space-y-2 rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
+                            class="space-y-2 rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs dark:border-white/5 dark:bg-neutral-900/80"
                         >
                             <p>Common causes of network errors:</p>
                             <ul class="list-inside list-disc space-y-1">
@@ -117,7 +120,7 @@ onUnmounted(() => {
                         </p>
 
                         <div
-                            class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
+                            class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs dark:border-white/5 dark:bg-neutral-900/80"
                         >
                             <p>
                                 <strong>To test:</strong> Open DevTools →
@@ -159,7 +162,7 @@ onUnmounted(() => {
                 >
                     <div class="grid gap-3 sm:grid-cols-2">
                         <div
-                            class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
+                            class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs dark:border-white/5 dark:bg-neutral-900/80"
                         >
                             <p class="font-semibold">Per-visit callback:</p>
                             <pre class="mt-1">
@@ -172,7 +175,7 @@ router.get('/url', {}, {
                             >
                         </div>
                         <div
-                            class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
+                            class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs dark:border-white/5 dark:bg-neutral-900/80"
                         >
                             <p class="font-semibold">Global event:</p>
                             <pre class="mt-1">

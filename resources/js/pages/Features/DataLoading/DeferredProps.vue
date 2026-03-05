@@ -124,9 +124,7 @@ const breadcrumbs: BreadcrumbItem[] = [
                 <template #header-action>
                     <Button
                         variant="outline"
-                        @click="
-                            router.reload({ only: ['slowStats'] })
-                        "
+                        @click="router.reload({ only: ['slowStats'] })"
                     >
                         Reload Stats
                     </Button>

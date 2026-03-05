@@ -250,7 +250,6 @@ function manualVisit(method: string) {
                         </div>
                     </div>
                 </FeatureCard>
-
             </div>
         </div>
     </AppLayout>

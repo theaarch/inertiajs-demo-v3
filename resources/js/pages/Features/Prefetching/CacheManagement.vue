@@ -92,18 +92,14 @@ const breadcrumbs: BreadcrumbItem[] = [
                                 <Button
                                     variant="outline"
                                     size="sm"
-                                    @click="
-                                        router.flushByCacheTags('crm')
-                                    "
+                                    @click="router.flushByCacheTags('crm')"
                                 >
                                     Flush "crm"
                                 </Button>
                                 <Button
                                     variant="outline"
                                     size="sm"
-                                    @click="
-                                        router.flushByCacheTags('orgs')
-                                    "
+                                    @click="router.flushByCacheTags('orgs')"
                                 >
                                     Flush "orgs"
                                 </Button>
@@ -131,7 +127,7 @@ const breadcrumbs: BreadcrumbItem[] = [
                         </div>
 
                         <div
-                            class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
+                            class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs dark:border-white/5 dark:bg-neutral-900/80"
                         >
                             <p>
                                 <strong>Tip:</strong> Forms can auto-invalidate

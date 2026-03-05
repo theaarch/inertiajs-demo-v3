@@ -205,9 +205,9 @@ function formatFileSize(bytes: number): string {
                 <div class="space-y-6">
                     <FeatureCard info-card title="Upload State">
                         <template #description>
-                            Tip: If you're on a fast network, throttle
-                            it in DevTools (Network &rarr; Slow 3G) to
-                            see the progress percentage in action.
+                            Tip: If you're on a fast network, throttle it in
+                            DevTools (Network &rarr; Slow 3G) to see the
+                            progress percentage in action.
                         </template>
                         <div class="space-y-3">
                             <div class="flex items-center justify-between">

@@ -158,7 +158,6 @@ const breadcrumbs: BreadcrumbItem[] = [
                         </p>
                     </div>
                 </FeatureCard>
-
             </div>
         </div>
     </AppLayout>

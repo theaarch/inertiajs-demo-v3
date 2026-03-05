@@ -47,7 +47,8 @@ function pushWithPropCallback() {
         props: (currentProps: Record<string, unknown>) => ({
             ...currentProps,
             counter: (currentProps.counter as number) * 10,
-            timestamp: 'Client-side override at ' + new Date().toLocaleTimeString(),
+            timestamp:
+                'Client-side override at ' + new Date().toLocaleTimeString(),
         }),
     });
 }
@@ -63,9 +64,8 @@ function pushWithPropCallback() {
                 docs="the-basics/manual-visits"
                 controller="app/Http/Controllers/Feature/NavigationController.php#L103"
             >
-                Client-side navigation using router.push() and
-                router.replace(). Update the URL and props without a server
-                request.
+                Client-side navigation using router.push() and router.replace().
+                Update the URL and props without a server request.
             </FeatureHeader>
 
             <div class="grid gap-6 lg:grid-cols-2">
@@ -112,9 +112,7 @@ function pushWithPropCallback() {
                 >
                     <div class="space-y-4">
                         <div class="space-y-2">
-                            <h4 class="text-sm font-semibold">
-                                router.push()
-                            </h4>
+                            <h4 class="text-sm font-semibold">router.push()</h4>
                             <Button
                                 variant="outline"
                                 class="w-full"
@@ -165,8 +163,8 @@ function pushWithPropCallback() {
                                 Increment counter
                             </Button>
                             <p class="text-xs text-muted-foreground">
-                                Spreads current props and overrides
-                                counter. Other props stay unchanged.
+                                Spreads current props and overrides counter.
+                                Other props stay unchanged.
                             </p>
                         </div>
 
@@ -182,8 +180,9 @@ function pushWithPropCallback() {
                                 Transform props + URL
                             </Button>
                             <p class="text-xs text-muted-foreground">
-                                Receives current props as an argument. Multiplies
-                                the counter by 10 and overrides the timestamp.
+                                Receives current props as an argument.
+                                Multiplies the counter by 10 and overrides the
+                                timestamp.
                             </p>
                         </div>
                     </div>

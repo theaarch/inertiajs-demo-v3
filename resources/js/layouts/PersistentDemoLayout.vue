@@ -7,7 +7,10 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import AppLayout from '@/layouts/AppLayout.vue';
 
-const breadcrumbs = [{ title: 'Layouts & Head' }, { title: 'Persistent Layouts' }];
+const breadcrumbs = [
+    { title: 'Layouts & Head' },
+    { title: 'Persistent Layouts' },
+];
 
 const elapsed = ref(0);
 const counter = ref(0);
@@ -86,7 +89,8 @@ const currentPath = computed(() => page.url);
                         href="/features/layouts/persistent-layouts"
                         class="inline-flex items-center rounded-md px-3 py-1.5 text-sm font-medium transition-colors"
                         :class="
-                            currentPath === '/features/layouts/persistent-layouts'
+                            currentPath ===
+                            '/features/layouts/persistent-layouts'
                                 ? 'bg-primary text-primary-foreground'
                                 : 'bg-muted text-muted-foreground hover:bg-accent hover:text-foreground'
                         "
@@ -97,7 +101,8 @@ const currentPath = computed(() => page.url);
                         href="/features/layouts/persistent-layouts/page-2"
                         class="inline-flex items-center rounded-md px-3 py-1.5 text-sm font-medium transition-colors"
                         :class="
-                            currentPath === '/features/layouts/persistent-layouts/page-2'
+                            currentPath ===
+                            '/features/layouts/persistent-layouts/page-2'
                                 ? 'bg-primary text-primary-foreground'
                                 : 'bg-muted text-muted-foreground hover:bg-accent hover:text-foreground'
                         "

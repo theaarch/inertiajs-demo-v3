@@ -222,9 +222,7 @@ const setDefaultsOnSuccess = ref(true);
                                             : 'secondary'
                                     "
                                     class="text-xs"
-                                    >{{
-                                        formRef?.processing ?? false
-                                    }}</Badge
+                                    >{{ formRef?.processing ?? false }}</Badge
                                 >
                             </div>
                             <div class="flex items-center justify-between">

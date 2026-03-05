@@ -16,7 +16,10 @@ import contacts from '@/wayfinder/routes/contacts';
 import type { Inertia } from '@/wayfinder/types';
 
 defineProps<
-    Omit<Inertia.Pages.Crm.Dashboard, 'totalContacts' | 'totalOrganizations' | 'recentNotesCount'> & {
+    Omit<
+        Inertia.Pages.Crm.Dashboard,
+        'totalContacts' | 'totalOrganizations' | 'recentNotesCount'
+    > & {
         totalContacts?: number;
         totalOrganizations?: number;
         recentNotesCount?: number;

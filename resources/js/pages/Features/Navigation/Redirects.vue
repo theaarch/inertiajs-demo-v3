@@ -22,8 +22,8 @@ const flashMessage = ref<string | null>(null);
 watch(
     () => usePage().props,
     () => {
-        const message = usePage<{ flash?: { message?: string } }>().props
-            .flash?.message;
+        const message = usePage<{ flash?: { message?: string } }>().props.flash
+            ?.message;
         if (message) {
             flashMessage.value = message;
         }
@@ -68,7 +68,10 @@ router.on('success', () => {
                             >
                             <Badge variant="outline">{{ timestamp }}</Badge>
                         </div>
-                        <div v-if="flashMessage" class="flex items-center gap-2">
+                        <div
+                            v-if="flashMessage"
+                            class="flex items-center gap-2"
+                        >
                             <span class="text-sm text-muted-foreground"
                                 >Flash:</span
                             >
@@ -110,9 +113,7 @@ router.on('success', () => {
                     <div class="space-y-3">
                         <p class="text-xs text-muted-foreground">
                             Uses
-                            <code
-                                >Inertia::flash(...)</code
-                            >
+                            <code>Inertia::flash(...)</code>
                             then
                             <code
                                 >to_route('features.navigation.redirects')</code
@@ -174,23 +175,16 @@ router.on('success', () => {
                                 How it works:
                             </p>
                             <ol class="mt-2 list-inside list-decimal space-y-1">
-                                <li>
-                                    Client sends PUT/PATCH/DELETE request
-                                </li>
-                                <li>
-                                    Server responds with 303 redirect
-                                </li>
+                                <li>Client sends PUT/PATCH/DELETE request</li>
+                                <li>Server responds with 303 redirect</li>
                                 <li>
                                     Browser follows redirect with GET request
                                 </li>
-                                <li>
-                                    Inertia renders the redirected page
-                                </li>
+                                <li>Inertia renders the redirected page</li>
                             </ol>
                         </div>
                     </div>
                 </FeatureCard>
-
             </div>
         </div>
     </AppLayout>

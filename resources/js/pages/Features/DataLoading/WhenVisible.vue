@@ -134,9 +134,7 @@ const breadcrumbs: BreadcrumbItem[] = [
             </div>
 
             <!-- Section 3: Favorites (~600ms) -->
-            <FeatureCard
-                title="Favorite Contacts"
-            >
+            <FeatureCard title="Favorite Contacts">
                 <WhenVisible data="section3">
                     <template #fallback>
                         <div class="space-y-2">

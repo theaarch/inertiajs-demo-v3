@@ -83,7 +83,7 @@ const metaDescription = ref('Document head management with Inertia.js');
                             />
                         </div>
                         <div
-                            class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
+                            class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs dark:border-white/5 dark:bg-neutral-900/80"
                         >
                             <p class="font-semibold">Current meta tags:</p>
                             <pre class="mt-1">
@@ -104,7 +104,7 @@ const metaDescription = ref('Document head management with Inertia.js');
                     </template>
                     <div class="space-y-3">
                         <div
-                            class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
+                            class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs dark:border-white/5 dark:bg-neutral-900/80"
                         >
                             <pre>
 createInertiaApp({
@@ -129,7 +129,7 @@ createInertiaApp({
                     </template>
                     <div class="space-y-3">
                         <div
-                            class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
+                            class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs dark:border-white/5 dark:bg-neutral-900/80"
                         >
                             <p class="font-semibold">Layout sets defaults:</p>
                             <pre class="mt-1">
@@ -140,7 +140,7 @@ createInertiaApp({
                             >
                         </div>
                         <div
-                            class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
+                            class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs dark:border-white/5 dark:bg-neutral-900/80"
                         >
                             <p class="font-semibold">Page overrides:</p>
                             <pre class="mt-1">
@@ -166,7 +166,7 @@ createInertiaApp({
                 >
                     <div class="grid gap-3 sm:grid-cols-3">
                         <div
-                            class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
+                            class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs dark:border-white/5 dark:bg-neutral-900/80"
                         >
                             <p class="font-semibold">Title shorthand</p>
                             <pre class="mt-1">
@@ -174,7 +174,7 @@ createInertiaApp({
                             >
                         </div>
                         <div
-                            class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
+                            class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs dark:border-white/5 dark:bg-neutral-900/80"
                         >
                             <p class="font-semibold">Full control</p>
                             <pre class="mt-1">
@@ -185,7 +185,7 @@ createInertiaApp({
                             >
                         </div>
                         <div
-                            class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
+                            class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs dark:border-white/5 dark:bg-neutral-900/80"
                         >
                             <p class="font-semibold">Reset on unmount</p>
                             <pre class="mt-1">

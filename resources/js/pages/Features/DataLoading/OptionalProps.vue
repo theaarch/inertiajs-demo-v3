@@ -181,14 +181,14 @@ const breadcrumbs: BreadcrumbItem[] = [
                     </div>
 
                     <div
-                        class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
+                        class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs dark:border-white/5 dark:bg-neutral-900/80"
                     >
                         <p><strong>Key Differences:</strong></p>
                         <ul class="mt-1 list-inside list-disc space-y-1">
                             <li>
-                                <strong>Regular</strong>: always resolved
-                                on full visits. Excluded from partial
-                                reloads unless explicitly requested.
+                                <strong>Regular</strong>: always resolved on
+                                full visits. Excluded from partial reloads
+                                unless explicitly requested.
                             </li>
                             <li>
                                 <strong>Optional</strong>: never resolved unless

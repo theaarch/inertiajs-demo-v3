@@ -83,21 +83,16 @@ function reset() {
                             >
                                 "Maintenance..."
                             </Button>
-                            <Button
-                                variant="outline"
-                                size="sm"
-                                @click="reset"
-                            >
+                            <Button variant="outline" size="sm" @click="reset">
                                 Reset
                             </Button>
                         </div>
 
                         <p class="text-xs text-muted-foreground">
                             The layout declares
-                            <code>useLayoutProps({ subtitle: '' })</code>.
-                            Pages override it with
-                            <code>setLayoutProps()</code>. Dynamic props
-                            auto-reset on navigation.
+                            <code>useLayoutProps({ subtitle: '' })</code>. Pages
+                            override it with <code>setLayoutProps()</code>.
+                            Dynamic props auto-reset on navigation.
                         </p>
                     </div>
                 </FeatureCard>

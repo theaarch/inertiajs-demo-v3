@@ -9,7 +9,6 @@ import AppLayout from '@/layouts/AppLayout.vue';
 import { type BreadcrumbItem } from '@/types';
 import type { App, Inertia } from '@/wayfinder/types';
 
-
 const props = defineProps<Inertia.Pages.Features.Forms.OptimisticUpdates>();
 
 const breadcrumbs: BreadcrumbItem[] = [

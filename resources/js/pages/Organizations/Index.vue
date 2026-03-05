@@ -9,11 +9,18 @@ import { type BreadcrumbItem } from '@/types';
 import organizationRoutes from '@/wayfinder/routes/organizations';
 import type { Inertia } from '@/wayfinder/types';
 
-type Paginated<T> = { data: T[]; links: { url: string | null; label: string; active: boolean }[] };
+type Paginated<T> = {
+    data: T[];
+    links: { url: string | null; label: string; active: boolean }[];
+};
 
 const props = defineProps<
     Omit<Inertia.Pages.Organizations.Index, 'organizations' | 'filters'> & {
-        organizations: Paginated<{ id: number; name: string; contacts_count: number }>;
+        organizations: Paginated<{
+            id: number;
+            name: string;
+            contacts_count: number;
+        }>;
         filters: { search: string };
     }
 >();

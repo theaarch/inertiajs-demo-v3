@@ -238,7 +238,7 @@ function triggerWithCancelToken() {
                     title="Code Example"
                 >
                     <pre
-                        class="overflow-auto rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-4 font-mono text-xs"
+                        class="overflow-auto rounded-lg border border-black/5 bg-neutral-50/80 p-4 font-mono text-xs dark:border-white/5 dark:bg-neutral-900/80"
                     >
 router.post('/endpoint', data, {
   onBefore: (visit) => confirm('Proceed?'),

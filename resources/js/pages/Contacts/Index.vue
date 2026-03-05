@@ -10,11 +10,21 @@ import { type BreadcrumbItem } from '@/types';
 import contactRoutes from '@/wayfinder/routes/contacts';
 import type { App, Inertia } from '@/wayfinder/types';
 
-type CursorPaginated<T> = { data: T[]; next_cursor: string | null; next_page_url: string | null; prev_cursor: string | null; prev_page_url: string | null };
+type CursorPaginated<T> = {
+    data: T[];
+    next_cursor: string | null;
+    next_page_url: string | null;
+    prev_cursor: string | null;
+    prev_page_url: string | null;
+};
 
 const props = defineProps<
     Omit<Inertia.Pages.Contacts.Index, 'contacts' | 'filters'> & {
-        contacts: CursorPaginated<App.Models.Contact & { organization?: { id: number; name: string } | null }>;
+        contacts: CursorPaginated<
+            App.Models.Contact & {
+                organization?: { id: number; name: string } | null;
+            }
+        >;
         filters: { search: string; favorite: boolean };
     }
 >();

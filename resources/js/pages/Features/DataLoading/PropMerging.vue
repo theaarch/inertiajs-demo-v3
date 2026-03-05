@@ -10,7 +10,12 @@ import { type BreadcrumbItem } from '@/types';
 
 const props = defineProps<{
     notifications: Array<{ id: number; message: string; type: string }>;
-    activities: Array<{ id: number; action: string; subject: string; time: string }>;
+    activities: Array<{
+        id: number;
+        action: string;
+        subject: string;
+        time: string;
+    }>;
     contacts: Array<{ id: number; name: string; updated: string }>;
     timestamp: string;
 }>();
@@ -25,7 +30,10 @@ function addNotification() {
 }
 
 function resetNotifications() {
-    router.reload({ reset: ['notifications'], only: ['notifications', 'timestamp'] });
+    router.reload({
+        reset: ['notifications'],
+        only: ['notifications', 'timestamp'],
+    });
 }
 
 function addActivity() {
@@ -47,7 +55,8 @@ function resetContacts() {
 const latestContactTimestamp = computed(() => {
     if (!props.contacts.length) return null;
     return props.contacts.reduce(
-        (latest, contact) => (contact.updated > latest ? contact.updated : latest),
+        (latest, contact) =>
+            contact.updated > latest ? contact.updated : latest,
         props.contacts[0].updated,
     );
 });
@@ -232,7 +241,7 @@ const latestContactTimestamp = computed(() => {
                         </p>
 
                         <div
-                            class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
+                            class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs dark:border-white/5 dark:bg-neutral-900/80"
                         >
                             <p>
                                 Each fetch returns all known contacts with fresh

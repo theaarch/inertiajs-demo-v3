@@ -28,9 +28,8 @@ const breadcrumbs: BreadcrumbItem[] = [
             <div class="grid gap-6 lg:grid-cols-2">
                 <FeatureCard title="SWR Link">
                     <template #description>
-                        <code class="text-xs"
-                            >:cacheFor="['10s', '20s']"</code
-                        >. Prefetched on mount. 10s fresh, then stale for up to
+                        <code class="text-xs">:cacheFor="['10s', '20s']"</code>.
+                        Prefetched on mount. 10s fresh, then stale for up to
                         20s.
                     </template>
                     <div class="space-y-3">
@@ -66,8 +65,8 @@ const breadcrumbs: BreadcrumbItem[] = [
                                 <li>
                                     <strong>Stale period</strong>: stale cached
                                     data is served instantly for immediate
-                                    navigation. The page updates with fresh
-                                    data from the server response.
+                                    navigation. The page updates with fresh data
+                                    from the server response.
                                 </li>
                                 <li>
                                     <strong>Expired</strong>: cache is gone, a

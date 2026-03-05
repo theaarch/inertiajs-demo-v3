@@ -63,9 +63,7 @@ const otherPage = () => (props.page === 1 ? 2 : 1);
                     title="Navigate Between Pages"
                 >
                     <template #header-action>
-                        <Badge variant="secondary">
-                            Page {{ page }}
-                        </Badge>
+                        <Badge variant="secondary"> Page {{ page }} </Badge>
                     </template>
                     <template #description>
                         Both pages return the same once props. Navigate between
@@ -79,26 +77,19 @@ const otherPage = () => (props.page === 1 ? 2 : 1);
                                 :variant="page === 1 ? 'default' : 'outline'"
                                 as-child
                             >
-                                <Link :href="onceProps(1).url">
-                                    Page 1
-                                </Link>
+                                <Link :href="onceProps(1).url"> Page 1 </Link>
                             </Button>
                             <Button
                                 :variant="page === 2 ? 'default' : 'outline'"
                                 as-child
                             >
-                                <Link :href="onceProps(2).url">
-                                    Page 2
-                                </Link>
+                                <Link :href="onceProps(2).url"> Page 2 </Link>
                             </Button>
                             <Button
                                 variant="outline"
                                 @click="
                                     router.reload({
-                                        only: [
-                                            'staticData',
-                                            'expiringData',
-                                        ],
+                                        only: ['staticData', 'expiringData'],
                                     })
                                 "
                             >
@@ -107,7 +98,7 @@ const otherPage = () => (props.page === 1 ? 2 : 1);
                         </div>
 
                         <div
-                            class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
+                            class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs dark:border-white/5 dark:bg-neutral-900/80"
                         >
                             <ul class="list-inside list-disc space-y-1">
                                 <li>

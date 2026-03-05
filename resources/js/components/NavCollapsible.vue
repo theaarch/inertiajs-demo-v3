@@ -51,7 +51,11 @@ function isGroupActive(): boolean {
                         >
                             <Link :href="item.href" class="flex items-center">
                                 <span class="truncate">{{ item.title }}</span>
-                                <span v-if="item.badge" class="ml-auto shrink-0 rounded bg-indigo-500/10 px-1 py-0.5 text-[9px] font-semibold leading-none text-indigo-500">{{ item.badge }}</span>
+                                <span
+                                    v-if="item.badge"
+                                    class="ml-auto shrink-0 rounded bg-indigo-500/10 px-1 py-0.5 text-[9px] leading-none font-semibold text-indigo-500"
+                                    >{{ item.badge }}</span
+                                >
                             </Link>
                         </SidebarMenuSubButton>
                     </SidebarMenuSubItem>

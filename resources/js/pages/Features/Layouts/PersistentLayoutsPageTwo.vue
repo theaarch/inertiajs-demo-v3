@@ -54,19 +54,27 @@ const email = ref('');
             <div class="space-y-3">
                 <div class="space-y-2 text-xs text-muted-foreground">
                     <p>
-                        <span class="font-medium text-foreground">Refs and reactive state</span>
+                        <span class="font-medium text-foreground"
+                            >Refs and reactive state</span
+                        >
                         keep their values (stopwatch, counter).
                     </p>
                     <p>
-                        <span class="font-medium text-foreground">Intervals and timers</span>
+                        <span class="font-medium text-foreground"
+                            >Intervals and timers</span
+                        >
                         continue running without interruption.
                     </p>
                     <p>
-                        <span class="font-medium text-foreground">Event listeners</span>
+                        <span class="font-medium text-foreground"
+                            >Event listeners</span
+                        >
                         registered in the layout stay attached.
                     </p>
                     <p>
-                        <span class="font-medium text-foreground">onMounted</span>
+                        <span class="font-medium text-foreground"
+                            >onMounted</span
+                        >
                         only fires once, not on every navigation.
                     </p>
                 </div>

@@ -140,13 +140,13 @@ function submitSecondary() {
                 <!-- Secondary Form with Error Bag -->
                 <FeatureCard title="Error Bags">
                     <template #description>
-                        When multiple forms share field names, validation
-                        errors can bleed between them. The
+                        When multiple forms share field names, validation errors
+                        can bleed between them. The
                         <code class="rounded bg-muted px-1 py-0.5 text-xs"
                             >errorBag</code
                         >
-                        option scopes errors under a unique key
-                        (<code class="rounded bg-muted px-1 py-0.5 text-xs"
+                        option scopes errors under a unique key (<code
+                            class="rounded bg-muted px-1 py-0.5 text-xs"
                             >page.props.errors.secondaryForm</code
                         >) so each form only displays its own errors. If the
                         backend uses

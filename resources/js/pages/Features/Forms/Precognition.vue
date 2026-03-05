@@ -204,9 +204,7 @@ form.setValidationTimeout(500);
                         <div class="pt-2">
                             <Button
                                 type="submit"
-                                :disabled="
-                                    form.processing || form.validating
-                                "
+                                :disabled="form.processing || form.validating"
                             >
                                 {{
                                     form.processing
@@ -478,9 +476,7 @@ form.setValidationTimeout(500);
                         <div class="pt-2">
                             <Button
                                 type="submit"
-                                :disabled="
-                                    processing || validating
-                                "
+                                :disabled="processing || validating"
                             >
                                 {{
                                     processing
@@ -498,7 +494,7 @@ form.setValidationTimeout(500);
                     <FeatureCard info-card title="Form Component vs useForm">
                         <div class="space-y-3 text-sm text-muted-foreground">
                             <div
-                                class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
+                                class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs dark:border-white/5 dark:bg-neutral-900/80"
                             >
                                 <p class="font-semibold">Form Component</p>
                                 <pre class="mt-1">
@@ -511,7 +507,7 @@ form.setValidationTimeout(500);
                                 >
                             </div>
                             <div
-                                class="rounded-lg border border-black/5 bg-neutral-50/80 dark:border-white/5 dark:bg-neutral-900/80 p-3 font-mono text-xs"
+                                class="rounded-lg border border-black/5 bg-neutral-50/80 p-3 font-mono text-xs dark:border-white/5 dark:bg-neutral-900/80"
                             >
                                 <p class="font-semibold">useForm</p>
                                 <pre class="mt-1">

@@ -46,9 +46,11 @@ const textInput = ref('');
                     <div class="space-y-4">
                         <div class="flex items-center gap-3">
                             <span class="text-sm font-medium">Counter:</span>
-                            <Badge variant="outline" class="min-w-10 justify-center tabular-nums text-lg">{{
-                                localCounter
-                            }}</Badge>
+                            <Badge
+                                variant="outline"
+                                class="min-w-10 justify-center text-lg tabular-nums"
+                                >{{ localCounter }}</Badge
+                            >
                             <Button size="sm" @click="localCounter++"
                                 >+1</Button
                             >

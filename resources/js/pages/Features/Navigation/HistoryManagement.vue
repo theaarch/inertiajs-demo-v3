@@ -24,9 +24,13 @@ function visitPush() {
 
 function visitReplace() {
     const next = props.visit + 1;
-    router.get(`/features/navigation/history-management?visit=${next}`, {}, {
-        replace: true,
-    });
+    router.get(
+        `/features/navigation/history-management?visit=${next}`,
+        {},
+        {
+            replace: true,
+        },
+    );
 }
 </script>
 
@@ -57,7 +61,7 @@ function visitReplace() {
                             >
                             <Badge
                                 variant="secondary"
-                                class="min-w-8 justify-center tabular-nums text-lg"
+                                class="min-w-8 justify-center text-lg tabular-nums"
                                 >{{ visit }}</Badge
                             >
                         </div>
@@ -164,7 +168,6 @@ function visitReplace() {
                         </div>
                     </div>
                 </FeatureCard>
-
             </div>
         </div>
     </AppLayout>

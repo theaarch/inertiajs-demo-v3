@@ -11,7 +11,13 @@ import contactRoutes from '@/wayfinder/routes/contacts';
 import organizationRoutes from '@/wayfinder/routes/organizations';
 import type { App, Inertia } from '@/wayfinder/types';
 
-type CursorPaginated<T> = { data: T[]; next_cursor: string | null; next_page_url: string | null; prev_cursor: string | null; prev_page_url: string | null };
+type CursorPaginated<T> = {
+    data: T[];
+    next_cursor: string | null;
+    next_page_url: string | null;
+    prev_cursor: string | null;
+    prev_page_url: string | null;
+};
 
 const props = defineProps<
     Omit<Inertia.Pages.Organizations.Show, 'contacts'> & {
